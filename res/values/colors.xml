@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="schedule_section_fly">#1C86EE</color>
+    <color name="schedule_section_fly_transparent">#00000000</color>
+	<color name="schedule_action_bg">#20000000</color>
+</resources>

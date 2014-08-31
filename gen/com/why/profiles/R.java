@@ -16,6 +16,12 @@ public final class R {
     }
     public static final class attr {
     }
+    public static final class color {
+        public static final int schedule_action_bg=0x7f050002;
+        public static final int schedule_date_number_text_color=0x7f050003;
+        public static final int schedule_section_fly=0x7f050000;
+        public static final int schedule_section_fly_transparent=0x7f050001;
+    }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
 
@@ -23,51 +29,101 @@ public final class R {
          screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
     
          */
-        public static final int activity_horizontal_margin=0x7f050000;
-        public static final int activity_vertical_margin=0x7f050001;
+        public static final int activity_horizontal_margin=0x7f060000;
+        public static final int activity_vertical_margin=0x7f060001;
+        public static final int day_margin=0x7f060003;
+        /**  For ScheduleFragment 
+         */
+        public static final int first_day_margin=0x7f060002;
+        public static final int min_cell_height=0x7f060005;
+        public static final int min_cell_width=0x7f060006;
+        public static final int text_height_width=0x7f060004;
     }
     public static final class drawable {
         public static final int begin_btn_bg=0x7f020000;
         public static final int btn_init_bg=0x7f020001;
         public static final int btn_press_bg=0x7f020002;
         public static final int ic_launcher=0x7f020003;
-        public static final int selector_btn_bg=0x7f020004;
-        public static final int tab_bg=0x7f020005;
-        public static final int tab_bg_selected=0x7f020006;
-        public static final int tab_card_bg=0x7f020007;
-        public static final int tab_edu_bg=0x7f020008;
-        public static final int tab_life_bg=0x7f020009;
-        public static final int tab_other_bg=0x7f02000a;
-        public static final int tab_selected_bg=0x7f02000b;
-        public static final int tab_selected_item_bg=0x7f02000c;
-        public static final int tab_selected_location=0x7f02000d;
-        public static final int tab_selected_operate=0x7f02000e;
-        public static final int tab_selected_profiles=0x7f02000f;
-        public static final int tab_selected_schedule=0x7f020010;
+        public static final int schedule_blue=0x7f020004;
+        public static final int schedule_date_number_background=0x7f020005;
+        public static final int schedule_day_bg=0x7f020006;
+        public static final int schedule_day_selected=0x7f020007;
+        public static final int schedule_green=0x7f020008;
+        public static final int schedule_navigation_next_item=0x7f020009;
+        public static final int schedule_navigation_previous_item=0x7f02000a;
+        public static final int schedule_normal_day=0x7f02000b;
+        public static final int schedule_orange=0x7f02000c;
+        public static final int schedule_purple=0x7f02000d;
+        public static final int schedule_quickcontact=0x7f02000e;
+        public static final int schedule_red=0x7f02000f;
+        public static final int schedule_res_1=0x7f020010;
+        public static final int schedule_res_2=0x7f020011;
+        public static final int schedule_res_3=0x7f020012;
+        public static final int schedule_res_4=0x7f020013;
+        public static final int schedule_res_5=0x7f020014;
+        public static final int schedule_res_6=0x7f020015;
+        public static final int schedule_res_7=0x7f020016;
+        public static final int schedule_res_8=0x7f020017;
+        public static final int schedule_today=0x7f020018;
+        public static final int selector_btn_bg=0x7f020019;
+        public static final int tab_bg=0x7f02001a;
+        public static final int tab_bg_selected=0x7f02001b;
+        public static final int tab_card_bg=0x7f02001c;
+        public static final int tab_edu_bg=0x7f02001d;
+        public static final int tab_life_bg=0x7f02001e;
+        public static final int tab_other_bg=0x7f02001f;
+        public static final int tab_selected_bg=0x7f020020;
+        public static final int tab_selected_item_bg=0x7f020021;
+        public static final int tab_selected_location=0x7f020022;
+        public static final int tab_selected_operate=0x7f020023;
+        public static final int tab_selected_profiles=0x7f020024;
+        public static final int tab_selected_schedule=0x7f020025;
     }
     public static final class id {
-        public static final int action_settings=0x7f090015;
-        public static final int activity_title=0x7f090001;
-        public static final int btn_back=0x7f090002;
-        public static final int btn_back_iv=0x7f090003;
-        public static final int footer_bar=0x7f09000f;
-        public static final int icon=0x7f090012;
-        public static final int insurance_viewpager=0x7f09000e;
-        public static final int other_btn=0x7f090007;
-        public static final int other_btn_iv=0x7f09000a;
-        public static final int other_tw=0x7f09000b;
-        public static final int pagertab=0x7f09000d;
-        public static final int realtabcontent=0x7f090000;
-        public static final int refresh_btn=0x7f090008;
-        public static final int refresh_btn_iv=0x7f090009;
-        public static final int tab_fiance_iv=0x7f090010;
-        public static final int tab_scorce_iv=0x7f090011;
-        public static final int title=0x7f090013;
-        public static final int title_btn=0x7f090004;
-        public static final int title_name=0x7f090005;
-        public static final int title_name_iv=0x7f090006;
-        public static final int tv_title=0x7f090014;
-        public static final int viewpager=0x7f09000c;
+        public static final int action_settings=0x7f0a002b;
+        public static final int activity_title=0x7f0a0001;
+        public static final int btn_back=0x7f0a0002;
+        public static final int btn_back_iv=0x7f0a0003;
+        public static final int footer_bar=0x7f0a0011;
+        public static final int icon=0x7f0a0028;
+        public static final int insurance_viewpager=0x7f0a0010;
+        public static final int other_btn=0x7f0a0007;
+        public static final int other_btn_iv=0x7f0a000a;
+        public static final int other_tw=0x7f0a000b;
+        public static final int pagertab=0x7f0a000d;
+        public static final int realtabcontent=0x7f0a0000;
+        public static final int refresh_btn=0x7f0a0008;
+        public static final int refresh_btn_iv=0x7f0a0009;
+        public static final int schedule_calendar=0x7f0a0014;
+        public static final int schedule_content_parent=0x7f0a000f;
+        public static final int schedule_date_section=0x7f0a001f;
+        public static final int schedule_entry=0x7f0a0020;
+        public static final int schedule_entry_brife=0x7f0a0023;
+        public static final int schedule_entry_preview=0x7f0a0024;
+        public static final int schedule_entry_setup=0x7f0a0025;
+        public static final int schedule_entry_timestamp=0x7f0a0022;
+        public static final int schedule_imageView1=0x7f0a0018;
+        public static final int schedule_imageView2=0x7f0a001a;
+        public static final int schedule_imageView3=0x7f0a001b;
+        public static final int schedule_imageView4=0x7f0a0019;
+        public static final int schedule_imageView5=0x7f0a001c;
+        public static final int schedule_imageView6=0x7f0a001d;
+        public static final int schedule_list_mode=0x7f0a0026;
+        public static final int schedule_list_row=0x7f0a001e;
+        public static final int schedule_rl=0x7f0a0016;
+        public static final int schedule_scroll_list=0x7f0a000e;
+        public static final int schedule_section_fly=0x7f0a0027;
+        public static final int schedule_status_icon=0x7f0a0021;
+        public static final int schedule_textView1=0x7f0a0015;
+        public static final int schedule_today_frame=0x7f0a0017;
+        public static final int tab_fiance_iv=0x7f0a0012;
+        public static final int tab_scorce_iv=0x7f0a0013;
+        public static final int title=0x7f0a0029;
+        public static final int title_btn=0x7f0a0004;
+        public static final int title_name=0x7f0a0005;
+        public static final int title_name_iv=0x7f0a0006;
+        public static final int tv_title=0x7f0a002a;
+        public static final int viewpager=0x7f0a000c;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
@@ -77,16 +133,29 @@ public final class R {
         public static final int fragment_profile=0x7f030004;
         public static final int fragment_schedule=0x7f030005;
         public static final int profiles_common=0x7f030006;
-        public static final int tab_indicator=0x7f030007;
-        public static final int tab_wighet=0x7f030008;
+        public static final int schedule_calendar_mode=0x7f030007;
+        public static final int schedule_day_of_week=0x7f030008;
+        public static final int schedule_day_view=0x7f030009;
+        public static final int schedule_list_item=0x7f03000a;
+        public static final int schedule_list_mode=0x7f03000b;
+        public static final int schedule_section_fly=0x7f03000c;
+        public static final int tab_indicator=0x7f03000d;
+        public static final int tab_wighet=0x7f03000e;
     }
     public static final class menu {
-        public static final int main=0x7f080000;
+        public static final int main=0x7f090000;
     }
     public static final class string {
-        public static final int action_settings=0x7f060001;
-        public static final int app_name=0x7f060000;
-        public static final int hello_world=0x7f060002;
+        public static final int action_settings=0x7f070001;
+        public static final int app_name=0x7f070000;
+        public static final int friday=0x7f070007;
+        public static final int hello_world=0x7f070002;
+        public static final int monday=0x7f070003;
+        public static final int saturday=0x7f070008;
+        public static final int sunday=0x7f070009;
+        public static final int thursday=0x7f070006;
+        public static final int tuesday=0x7f070004;
+        public static final int wednesday=0x7f070005;
     }
     public static final class style {
         /** 
@@ -110,10 +179,10 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f070000;
+        public static final int AppBaseTheme=0x7f080000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f070001;
+        public static final int AppTheme=0x7f080001;
     }
 }

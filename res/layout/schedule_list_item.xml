@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/schedule_list_row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    
+     >
+    
+    <TextView 
+		        	android:id="@+id/schedule_date_section"
+		        	android:layout_width="100dp"
+		        	android:layout_height="30dp"
+		        	android:background="#1C86EE"
+		        	android:textColor="#ffffff"
+		        	android:gravity="center"
+		        	android:textSize="15sp"
+		        	android:textStyle="bold"
+		        	android:paddingLeft="8dp"
+		        	android:paddingRight="8dp"
+		        	/> 
+    <LinearLayout 
+        android:id="@+id/schedule_entry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        >               
+
+        <LinearLayout 
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_vertical"
+            >
+            <ImageView 
+                android:id="@+id/schedule_status_icon"
+                android:layout_width="35dp"
+                android:layout_height="35dp" 
+            />
+            <TextView
+	        android:id="@+id/schedule_entry_timestamp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#FF7F00"
+	        android:textStyle="bold"
+	        android:textSize="12sp"
+	        android:gravity="center" />
+        </LinearLayout>
+	    
+         
+        <!-- title of each entry -->
+        <LinearLayout 
+            android:id="@+id/schedule_entry_brife"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="7dp"
+            >
+         
+        <!-- content preview -->
+        <TextView 
+            android:id="@+id/schedule_entry_preview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            android:maxLines="1"
+            android:lines="1"/>
+        
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="添加时间:"
+                android:textColor="#878787"
+                android:textSize="11sp"/>
+            
+            <TextView 
+            android:id="@+id/schedule_entry_setup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#878787"
+            android:textSize="11sp"
+            android:layout_marginLeft="4dp"
+            android:textStyle="normal"/>
+        </LinearLayout>
+        
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

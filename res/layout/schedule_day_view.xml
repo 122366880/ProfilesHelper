@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/schedule_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="@dimen/min_cell_height"
+    android:minWidth="@dimen/min_cell_width" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <FrameLayout
+            android:layout_width="@dimen/text_height_width"
+            android:layout_height="@dimen/text_height_width"
+            android:layout_centerInParent="true"
+            android:id="@+id/schedule_today_frame"
+            android:background="@drawable/schedule_today" />
+
+        <TextView
+            android:id="@+id/schedule_textView1"
+            android:layout_width="@dimen/text_height_width"
+            android:layout_height="@dimen/text_height_width"
+            android:layout_centerInParent="true"
+            android:background="@drawable/schedule_date_number_background"
+            android:gravity="center"
+            android:text="31"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/schedule_date_number_text_color" />
+
+        <ImageView
+            android:id="@+id/schedule_imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/schedule_quickcontact" />
+
+        <ImageView
+            android:id="@+id/schedule_imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/schedule_imageView2"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/schedule_imageView3"
+            android:src="@drawable/schedule_green" />
+
+        <ImageView
+            android:id="@+id/schedule_imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/schedule_imageView2"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/schedule_imageView4"
+            android:src="@drawable/schedule_orange" />
+
+        <ImageView
+            android:id="@+id/schedule_imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/schedule_imageView2"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/schedule_imageView5"
+            android:src="@drawable/schedule_red" />
+
+        <ImageView
+            android:id="@+id/schedule_imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="2dp"
+            android:src="@drawable/schedule_blue" />
+
+        <ImageView
+            android:id="@+id/schedule_imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/schedule_imageView2"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/schedule_imageView2"
+            android:src="@drawable/schedule_purple" />
+    </RelativeLayout>
+
+</RelativeLayout>

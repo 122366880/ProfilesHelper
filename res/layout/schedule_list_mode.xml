@@ -1,0 +1,11 @@
+<com.why.profiles.view.PinnedHeaderListView 
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    xmlns:tools="http://schemas.android.com/tools"
+		android:id="@+id/schedule_list_mode"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:fadeScrollbars="true"
+		android:scrollbarStyle="outsideOverlay">
+				    
+</com.why.profiles.view.PinnedHeaderListView>
+

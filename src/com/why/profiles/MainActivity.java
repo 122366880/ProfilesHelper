@@ -1,11 +1,13 @@
 package com.why.profiles;
 
 
+import com.why.profiles.adapter.ScheduleSectionListAdapter;
 import com.why.profiles.common.DummyTabContent;
 import com.why.profiles.fragment.LocationFragment;
 import com.why.profiles.fragment.OperateFragment;
 import com.why.profiles.fragment.ProfilesFragment;
 import com.why.profiles.fragment.ScheduleFragment;
+import com.why.profiles.view.ExtendedCalendarView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,6 +18,7 @@ import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -43,6 +46,7 @@ public class MainActivity extends FragmentActivity{
 	private LocationFragment locationFragment;
 	private OperateFragment operateFragment;
 	private FragmentManager mFragmentManager = getSupportFragmentManager();
+	private ScheduleClickListener scheduleListener;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -207,11 +211,12 @@ public class MainActivity extends FragmentActivity{
 		}
 
 	}
-
+ 
 	private void attachTabSchedule() {
 
 		if (scheduleFragment == null) {
 			scheduleFragment = new ScheduleFragment();
+			this.scheduleListener = this.scheduleFragment;
 			mFragmentTransaction.add(R.id.realtabcontent, scheduleFragment, "Schedule");
 		} else {
 			mFragmentTransaction.show(scheduleFragment);
@@ -290,6 +295,40 @@ public class MainActivity extends FragmentActivity{
 		super.onStop();
 	}
 	
+	
+	//ScheduleFragment button click listener
+	//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	public interface ScheduleClickListener{
+		//switch to list mode
+		public void list_mode(View v);
+		
+		//switch to calendar mode
+		public void calendar_mode(View v);
+		//switch to grid mode
+		public void grid_mode(View v);
+		
+		//add new alert
+		public void add_alert(View v);
+	}
+	
+	
 	 
+	public void schedule_list_mode(View v){
+		this.scheduleListener.list_mode(v);
+	}
+	
+	public void schedule_calendar_mode(View v){
+		this.scheduleListener.calendar_mode(v);
+	}
+	
+	public void schedule_grid_mode(View v){
+		this.scheduleListener.grid_mode(v);
+	}
+	
+	public void schedule_add_alert(View v){
+		this.scheduleListener.add_alert(v);
+	}
+	
+	//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 }
 
