@@ -15,6 +15,32 @@ public final class R {
         public static final int push_right_out=0x7f040003;
     }
     public static final class attr {
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int drawSelectorOnTop=0x7f010000;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int itemMargin=0x7f010002;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int numColumns=0x7f010001;
     }
     public static final class color {
         public static final int schedule_action_bg=0x7f050002;
@@ -35,6 +61,7 @@ public final class R {
         /**  For ScheduleFragment 
          */
         public static final int first_day_margin=0x7f060002;
+        public static final int grid_item_margin=0x7f060007;
         public static final int min_cell_height=0x7f060005;
         public static final int min_cell_width=0x7f060006;
         public static final int text_height_width=0x7f060004;
@@ -80,12 +107,12 @@ public final class R {
         public static final int tab_selected_schedule=0x7f020025;
     }
     public static final class id {
-        public static final int action_settings=0x7f0a002b;
+        public static final int action_settings=0x7f0a002f;
         public static final int activity_title=0x7f0a0001;
         public static final int btn_back=0x7f0a0002;
         public static final int btn_back_iv=0x7f0a0003;
         public static final int footer_bar=0x7f0a0011;
-        public static final int icon=0x7f0a0028;
+        public static final int icon=0x7f0a002c;
         public static final int insurance_viewpager=0x7f0a0010;
         public static final int other_btn=0x7f0a0007;
         public static final int other_btn_iv=0x7f0a000a;
@@ -96,33 +123,37 @@ public final class R {
         public static final int refresh_btn_iv=0x7f0a0009;
         public static final int schedule_calendar=0x7f0a0014;
         public static final int schedule_content_parent=0x7f0a000f;
-        public static final int schedule_date_section=0x7f0a001f;
-        public static final int schedule_entry=0x7f0a0020;
-        public static final int schedule_entry_brife=0x7f0a0023;
-        public static final int schedule_entry_preview=0x7f0a0024;
-        public static final int schedule_entry_setup=0x7f0a0025;
-        public static final int schedule_entry_timestamp=0x7f0a0022;
+        public static final int schedule_date_section=0x7f0a0023;
+        public static final int schedule_entry=0x7f0a0024;
+        public static final int schedule_entry_brife=0x7f0a0027;
+        public static final int schedule_entry_preview=0x7f0a0028;
+        public static final int schedule_entry_setup=0x7f0a0029;
+        public static final int schedule_entry_timestamp=0x7f0a0026;
+        public static final int schedule_grid_item_content=0x7f0a0020;
+        public static final int schedule_grid_item_setup=0x7f0a0021;
+        public static final int schedule_grid_item_time=0x7f0a001f;
+        public static final int schedule_grid_view=0x7f0a001e;
         public static final int schedule_imageView1=0x7f0a0018;
         public static final int schedule_imageView2=0x7f0a001a;
         public static final int schedule_imageView3=0x7f0a001b;
         public static final int schedule_imageView4=0x7f0a0019;
         public static final int schedule_imageView5=0x7f0a001c;
         public static final int schedule_imageView6=0x7f0a001d;
-        public static final int schedule_list_mode=0x7f0a0026;
-        public static final int schedule_list_row=0x7f0a001e;
+        public static final int schedule_list_mode=0x7f0a002a;
+        public static final int schedule_list_row=0x7f0a0022;
         public static final int schedule_rl=0x7f0a0016;
         public static final int schedule_scroll_list=0x7f0a000e;
-        public static final int schedule_section_fly=0x7f0a0027;
-        public static final int schedule_status_icon=0x7f0a0021;
+        public static final int schedule_section_fly=0x7f0a002b;
+        public static final int schedule_status_icon=0x7f0a0025;
         public static final int schedule_textView1=0x7f0a0015;
         public static final int schedule_today_frame=0x7f0a0017;
         public static final int tab_fiance_iv=0x7f0a0012;
         public static final int tab_scorce_iv=0x7f0a0013;
-        public static final int title=0x7f0a0029;
+        public static final int title=0x7f0a002d;
         public static final int title_btn=0x7f0a0004;
         public static final int title_name=0x7f0a0005;
         public static final int title_name_iv=0x7f0a0006;
-        public static final int tv_title=0x7f0a002a;
+        public static final int tv_title=0x7f0a002e;
         public static final int viewpager=0x7f0a000c;
     }
     public static final class layout {
@@ -136,11 +167,13 @@ public final class R {
         public static final int schedule_calendar_mode=0x7f030007;
         public static final int schedule_day_of_week=0x7f030008;
         public static final int schedule_day_view=0x7f030009;
-        public static final int schedule_list_item=0x7f03000a;
-        public static final int schedule_list_mode=0x7f03000b;
-        public static final int schedule_section_fly=0x7f03000c;
-        public static final int tab_indicator=0x7f03000d;
-        public static final int tab_wighet=0x7f03000e;
+        public static final int schedule_grid_mode=0x7f03000a;
+        public static final int schedule_grid_mode_item=0x7f03000b;
+        public static final int schedule_list_item=0x7f03000c;
+        public static final int schedule_list_mode=0x7f03000d;
+        public static final int schedule_section_fly=0x7f03000e;
+        public static final int tab_indicator=0x7f03000f;
+        public static final int tab_wighet=0x7f030010;
     }
     public static final class menu {
         public static final int main=0x7f090000;
@@ -185,4 +218,67 @@ public final class R {
          */
         public static final int AppTheme=0x7f080001;
     }
+    public static final class styleable {
+        /** Attributes that can be used with a StaggeredGridView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #StaggeredGridView_drawSelectorOnTop com.why.profiles:drawSelectorOnTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #StaggeredGridView_itemMargin com.why.profiles:itemMargin}</code></td><td></td></tr>
+           <tr><td><code>{@link #StaggeredGridView_numColumns com.why.profiles:numColumns}</code></td><td></td></tr>
+           </table>
+           @see #StaggeredGridView_drawSelectorOnTop
+           @see #StaggeredGridView_itemMargin
+           @see #StaggeredGridView_numColumns
+         */
+        public static final int[] StaggeredGridView = {
+            0x7f010000, 0x7f010001, 0x7f010002
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.why.profiles.R.attr#drawSelectorOnTop}
+          attribute's value can be found in the {@link #StaggeredGridView} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.why.profiles:drawSelectorOnTop
+        */
+        public static final int StaggeredGridView_drawSelectorOnTop = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.why.profiles.R.attr#itemMargin}
+          attribute's value can be found in the {@link #StaggeredGridView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.why.profiles:itemMargin
+        */
+        public static final int StaggeredGridView_itemMargin = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.why.profiles.R.attr#numColumns}
+          attribute's value can be found in the {@link #StaggeredGridView} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.why.profiles:numColumns
+        */
+        public static final int StaggeredGridView_numColumns = 1;
+    };
 }
