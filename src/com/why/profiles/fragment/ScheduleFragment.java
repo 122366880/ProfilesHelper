@@ -31,7 +31,7 @@ public class ScheduleFragment extends Fragment implements HandleItemClickEvent,S
 	ViewGroup mContainer;
 	com.why.profiles.view.PinnedHeaderListView listView;
 	ExtendedCalendarView calendarView;
-	com.origamilabs.library.views.StaggeredGridView gridView;
+//	com.origamilabs.library.views.StaggeredGridView gridView;
 	SimpleAdapter gridAdapter;
 	
 	@Override
@@ -170,12 +170,12 @@ public class ScheduleFragment extends Fragment implements HandleItemClickEvent,S
 			contentParent = (LinearLayout) mView.findViewById(R.id.schedule_content_parent);
 		
 		contentParent.removeAllViews();
-		gridView = (com.origamilabs.library.views.StaggeredGridView)(mInflater.inflate(R.layout.schedule_grid_mode, contentParent));
-		gridView.setColumnCount(2);
-		gridAdapter = new SimpleAdapter(getActivity(), gridEntries, R.layout.schedule_grid_mode_item,
-				new String[]{"schedule_grid_item_time","schedule_grid_item_content","schedule_grid_item_setup"}
-				,new int[]{R.id.schedule_grid_item_time,R.id.schedule_grid_item_content,R.id.schedule_grid_item_setup});
-		gridView.setAdapter(gridAdapter);
+//		gridView = (com.origamilabs.library.views.StaggeredGridView)(mInflater.inflate(R.layout.schedule_grid_mode, contentParent));
+//		gridView.setColumnCount(2);
+//		gridAdapter = new SimpleAdapter(getActivity(), gridEntries, R.layout.schedule_grid_mode_item,
+//				new String[]{"schedule_grid_item_time","schedule_grid_item_content","schedule_grid_item_setup"}
+//				,new int[]{R.id.schedule_grid_item_time,R.id.schedule_grid_item_content,R.id.schedule_grid_item_setup});
+//		gridView.setAdapter(gridAdapter);
 	}
 	
 	//add new alert

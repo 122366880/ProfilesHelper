@@ -15,32 +15,6 @@ public final class R {
         public static final int push_right_out=0x7f040003;
     }
     public static final class attr {
-        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int drawSelectorOnTop=0x7f010000;
-        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-in (inches), mm (millimeters).
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int itemMargin=0x7f010002;
-        /** <p>Must be an integer value, such as "<code>100</code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int numColumns=0x7f010001;
     }
     public static final class color {
         public static final int schedule_action_bg=0x7f050002;
@@ -218,67 +192,4 @@ containing a value of this type.
          */
         public static final int AppTheme=0x7f080001;
     }
-    public static final class styleable {
-        /** Attributes that can be used with a StaggeredGridView.
-           <p>Includes the following attributes:</p>
-           <table>
-           <colgroup align="left" />
-           <colgroup align="left" />
-           <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #StaggeredGridView_drawSelectorOnTop com.why.profiles:drawSelectorOnTop}</code></td><td></td></tr>
-           <tr><td><code>{@link #StaggeredGridView_itemMargin com.why.profiles:itemMargin}</code></td><td></td></tr>
-           <tr><td><code>{@link #StaggeredGridView_numColumns com.why.profiles:numColumns}</code></td><td></td></tr>
-           </table>
-           @see #StaggeredGridView_drawSelectorOnTop
-           @see #StaggeredGridView_itemMargin
-           @see #StaggeredGridView_numColumns
-         */
-        public static final int[] StaggeredGridView = {
-            0x7f010000, 0x7f010001, 0x7f010002
-        };
-        /**
-          <p>This symbol is the offset where the {@link com.why.profiles.R.attr#drawSelectorOnTop}
-          attribute's value can be found in the {@link #StaggeredGridView} array.
-
-
-          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-          @attr name com.why.profiles:drawSelectorOnTop
-        */
-        public static final int StaggeredGridView_drawSelectorOnTop = 0;
-        /**
-          <p>This symbol is the offset where the {@link com.why.profiles.R.attr#itemMargin}
-          attribute's value can be found in the {@link #StaggeredGridView} array.
-
-
-          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-in (inches), mm (millimeters).
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-          @attr name com.why.profiles:itemMargin
-        */
-        public static final int StaggeredGridView_itemMargin = 2;
-        /**
-          <p>This symbol is the offset where the {@link com.why.profiles.R.attr#numColumns}
-          attribute's value can be found in the {@link #StaggeredGridView} array.
-
-
-          <p>Must be an integer value, such as "<code>100</code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-          @attr name com.why.profiles:numColumns
-        */
-        public static final int StaggeredGridView_numColumns = 1;
-    };
 }
